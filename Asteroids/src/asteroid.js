@@ -4,10 +4,10 @@ const Ship = require("./ship");
 const Bullet = require("./bullet");
 const DEFAULTS = {
     COLOR: "#484848",
-    RADIUS: Math.floor(Math.random() * 30) + 15
 };
 function Asteroid (options) {
-    let args = [options.pos, options.vel, DEFAULTS.RADIUS, DEFAULTS.COLOR, options.game];
+    let radius = Math.floor(Math.random() * 40) + 10;
+    let args = [options.pos, options.vel, radius, DEFAULTS.COLOR, options.game];
     MovingObject.apply(this, args);
 }
 

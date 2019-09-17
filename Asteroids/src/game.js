@@ -53,8 +53,8 @@ Game.prototype.randomPosition = function() {
 }
 
 Game.prototype.randomVelocity = function () {
-  let x = Math.floor(Math.random() * 1.5) + 5;
-  let y = Math.floor(Math.random() * 1.5) + 5;
+  let x = Math.floor(Math.random() * 1.5) + 2;
+  let y = Math.floor(Math.random() * 1.5) + 2;
   let xNeg = Math.floor(Math.random() * 2);
   let yNeg = Math.floor(Math.random() * 2);
 
